@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shakespeareanify</title>
+  <style>
+    body { font-family: serif; text-align: center; padding: 10px; }
+    h1 { font-size: 18px; }
+    button { padding: 8px 12px; font-size: 14px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Shakespeareanify</h1>
+  <p>Toggle the transformation of thy words.</p>
+  <button id="toggle">Loading...</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      let button = document.getElementById("toggle");
+      
+      chrome.storage.local.get("shakespeareanify", function(data) {
+        button.innerText = data.shakespeareanify ? "Disable" : "Enable";
+      });
+
+      button.addEventListener("click", function() {
+        chrome.storage.local.get("shakespeareanify", function(data) {
+          let newState = !data.shakespeareanify;
+          chrome.storage.local.set({ shakespeareanify: newState }, function() {
+            button.innerText = newState ? "Disable" : "Enable";
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+# Shakespeareanify - Chrome Extension
+
+This extension converts thy modern words into fair Shakespearean text as thou typest!
+
+## 🛠️ Installation Instructions:
+1. **Download & Extract**  
+   - Download the folder containing this extension.  
+   - Ensure all files are in the same directory.
+
+2. **Load the Extension in Chrome**
+   - Open Google Chrome.
+   - Go to `chrome://extensions/` in the address bar.
+   - Enable "Developer mode" (toggle in the top-right corner).
+   - Click "Load unpacked" and select the folder where you extracted the files.
+
+3. **Using the Extension**
+   - Click on the extension icon in the toolbar.
+   - Press "Enable" to activate Shakespearean mode.
+   - Type in any text field, and your words shall be transformed into Shakespearean style.
+
+4. **Disabling the Extension**
+   - Click on the extension icon again.
+   - Press "Disable" to return to modern English.
+
+5. **Uninstalling**
+   - Go to `chrome://extensions/`, find "Shakespeareanify," and click "Remove."
+
+## 🎭 Features:
+✅ Translates words to Shakespearean as you type.  
+✅ Works on any website with input fields.  
+✅ Easily toggle the feature on or off.  
+
+Enjoy speaking like the Bard! 🎭
